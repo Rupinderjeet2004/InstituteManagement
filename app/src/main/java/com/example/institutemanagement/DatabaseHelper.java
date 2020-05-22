@@ -1,5 +1,6 @@
 package com.example.institutemanagement;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -21,7 +22,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     //Instance of SQLiteDatabase
     private SQLiteDatabase db = this.getWritableDatabase();
 
-    public DatabaseHelper(@Nullable Context context) {
+    DatabaseHelper(@Nullable Context context) {
         //Passing database name variable To Create database whenever constructor is called.
         super(context, DATABASE_NAME, null, 1);
     }
@@ -36,9 +37,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     }
 
-    boolean registerUser() {
-
-        db.execSQL("create table if not exists " + TBL_LOGIN_CREDENTIALS + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, USERNAME TEXT, PASSWORD TEXT)");
-        return false;
+    boolean registerUser(String username, String password) {
+        String USERNAME = "USERNAME";
+        String PASSWORD = "PASSWORD";
+        db.execSQL("CREATE TABLE IF NOT EXISTS " + TBL_LOGIN_CREDENTIALS + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, USERNAME TEXT, PASSWORD TEXT)");
+        ContentValues values = new ContentValues();
+        values.put(USERNAME, username);
+        values.put(PASSWORD, password);
+        long result = db.insert(TBL_LOGIN_CREDENTIALS, null, values);
+        return result != -1;
     }
 }

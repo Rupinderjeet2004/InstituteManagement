@@ -7,7 +7,7 @@
     tools:context=".Register">
 
     <EditText
-        android:id="@+id/editText28"
+        android:id="@+id/passwordFieldRegisterFrame"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="21dp"
@@ -19,13 +19,13 @@
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/editText30"
+        app:layout_constraintBottom_toTopOf="@+id/confirmPasswordFieldRegisterFrame"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText29" />
+        app:layout_constraintTop_toBottomOf="@+id/usernameFieldRegisterFrame" />
 
     <EditText
-        android:id="@+id/editText30"
+        android:id="@+id/confirmPasswordFieldRegisterFrame"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="21dp"
@@ -37,13 +37,13 @@
         android:ems="10"
         android:hint="@string/confirm_password"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/login4"
+        app:layout_constraintBottom_toTopOf="@+id/registerSave"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText28" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordFieldRegisterFrame" />
 
     <Button
-        android:id="@+id/login4"
+        android:id="@+id/registerSave"
         android:layout_width="154dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="305dp"
@@ -51,10 +51,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText30" />
+        app:layout_constraintTop_toBottomOf="@+id/confirmPasswordFieldRegisterFrame" />
 
     <EditText
-        android:id="@+id/editText29"
+        android:id="@+id/usernameFieldRegisterFrame"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="21dp"
@@ -67,7 +67,7 @@
         android:ems="10"
         android:hint="@string/username"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/editText28"
+        app:layout_constraintBottom_toTopOf="@+id/passwordFieldRegisterFrame"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
