@@ -1,7 +1,9 @@
 package com.example.institutemanagement;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -46,5 +48,30 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(PASSWORD, password);
         long result = db.insert(TBL_LOGIN_CREDENTIALS, null, values);
         return result != -1;
+    }
+
+    String userLogin(String password) {
+        //Query to select username and password form table TBL_LOGIN_CREDENTIALS.
+        String query = "SELECT USERNAME, PASSWORD FROM " + TBL_LOGIN_CREDENTIALS;
+        //USing cursor to store values as the data is being searched in database.
+        @SuppressLint("Recycle") Cursor cursor = db.rawQuery(query, null);
+        //Declaring temp variables
+        String user, pass = "";
+        //Checking if cursor moves to first element in database.
+        if (cursor.moveToFirst()) {
+            do {
+                //Storing first element to user variable
+                user = cursor.getString(0);
+                //Then checking if value of user variable is equals to the password entered by the user.
+                if (user.equals(password)) {
+                    //If the password entered by the user is found then the loop will break.
+                    pass = cursor.getString(1);
+                    break;
+                }
+            }
+            //It will go until matching password is not found or there is nothing to query.
+            while (cursor.moveToNext());
+        }
+        return pass;
     }
 }
