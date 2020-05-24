@@ -74,4 +74,24 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
         return pass;
     }
+
+    boolean addNewCourses(String Id, String courseName, String duration, String fee) {
+        String COURSEID = "COURSEID";
+        String COURSENAME = "COURSENAME";
+        String DURATION = "DURATION";
+        String FEE = "FEE";
+        db.execSQL("CREATE TABLE IF NOT EXISTS " + TBL_COURSES + " (COURSEID INTEGER PRIMARY KEY, COURSENAME TEXT, DURATION INTEGER, FEE INTEGER)");
+        ContentValues values = new ContentValues();
+        values.put(COURSEID, Id);
+        values.put(COURSENAME, courseName);
+        values.put(DURATION, duration);
+        values.put(FEE, fee);
+        long result = db.insert(TBL_COURSES, null, values);
+        return result != -1;
+    }
+
+    boolean updateCourses() {
+
+        return false;
+    }
 }

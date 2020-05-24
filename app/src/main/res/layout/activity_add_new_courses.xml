@@ -8,7 +8,7 @@
     tools:ignore="LabelFor">
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/courseIDAddCourses"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/resetButtonAddCourses"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="35dp"
@@ -32,10 +32,10 @@
         android:text="@string/reset"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button" />
+        app:layout_constraintStart_toEndOf="@+id/saveButtonAddCourses" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/durationAddCourses"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
@@ -56,11 +56,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/course_name"
-        app:layout_constraintStart_toStartOf="@+id/editText5"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintStart_toStartOf="@+id/courseNameAddCourses"
+        app:layout_constraintTop_toBottomOf="@+id/courseIDAddCourses" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/courseNameAddCourses"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
@@ -82,11 +82,11 @@
         android:layout_marginTop="52dp"
         android:text="@string/course_id"
         android:visibility="visible"
-        app:layout_constraintStart_toStartOf="@+id/editText3"
+        app:layout_constraintStart_toStartOf="@+id/courseIDAddCourses"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/feeAddCourses"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
@@ -107,8 +107,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="22dp"
         android:text="@string/duration"
-        app:layout_constraintStart_toStartOf="@+id/editText6"
-        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+        app:layout_constraintStart_toStartOf="@+id/durationAddCourses"
+        app:layout_constraintTop_toBottomOf="@+id/courseNameAddCourses" />
 
     <TextView
         android:id="@+id/textView16"
@@ -116,11 +116,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/fee"
-        app:layout_constraintStart_toStartOf="@+id/editText7"
-        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+        app:layout_constraintStart_toStartOf="@+id/feeAddCourses"
+        app:layout_constraintTop_toBottomOf="@+id/durationAddCourses" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/saveButtonAddCourses"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
@@ -129,9 +129,9 @@
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
         android:text="@string/save"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/resetButtonAddCourses"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText7" />
+        app:layout_constraintTop_toBottomOf="@+id/feeAddCourses" />
 
     <Button
         android:id="@+id/button3"
@@ -145,6 +145,6 @@
         android:text="@string/view_all_courses"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/saveButtonAddCourses" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
