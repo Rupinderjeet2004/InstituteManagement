@@ -13,12 +13,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
+        android:layout_marginBottom="1dp"
         android:text="@string/fee"
-        app:layout_constraintBottom_toTopOf="@+id/feeUpdateField"
-        app:layout_constraintStart_toStartOf="@+id/feeUpdateField" />
+        app:layout_constraintBottom_toTopOf="@+id/feeUpdateCourses"
+        app:layout_constraintStart_toStartOf="@+id/feeUpdateCourses" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/courseIDUpdateCourses"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
@@ -34,16 +35,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/resetButtonUpdateCourses"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="35dp"
         android:layout_marginRight="35dp"
-        android:layout_marginBottom="19dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/reset"
         app:layout_constraintBottom_toTopOf="@+id/button13"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button10" />
+        app:layout_constraintStart_toEndOf="@+id/saveButtonUpdateCourses" />
 
     <TextView
         android:id="@+id/textView18"
@@ -51,13 +52,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="7dp"
         android:layout_marginLeft="7dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="43dp"
         android:text="@string/duration"
-        app:layout_constraintBottom_toBottomOf="@+id/editText9"
-        app:layout_constraintStart_toStartOf="@+id/editText9" />
+        app:layout_constraintBottom_toBottomOf="@+id/durationUpdateCourses"
+        app:layout_constraintStart_toStartOf="@+id/durationUpdateCourses" />
 
     <EditText
-        android:id="@+id/editText9"
+        android:id="@+id/durationUpdateCourses"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
@@ -70,10 +71,10 @@
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText8" />
+        app:layout_constraintTop_toBottomOf="@+id/courseNameUpdateCourses" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/courseNameUpdateCourses"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
@@ -86,7 +87,7 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        app:layout_constraintTop_toBottomOf="@+id/courseIDUpdateCourses" />
 
     <Button
         android:id="@+id/button13"
@@ -96,24 +97,24 @@
         android:layout_marginLeft="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:layout_marginBottom="134dp"
+        android:layout_marginBottom="135dp"
         android:text="@string/view_all_courses"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/saveButtonUpdateCourses"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginEnd="47dp"
-        android:layout_marginRight="47dp"
-        android:layout_marginBottom="19dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/save"
         app:layout_constraintBottom_toTopOf="@+id/button13"
-        app:layout_constraintEnd_toStartOf="@+id/button12"
+        app:layout_constraintEnd_toStartOf="@+id/resetButtonUpdateCourses"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -124,16 +125,16 @@
         android:layout_marginLeft="5dp"
         android:layout_marginBottom="44dp"
         android:text="@string/course_name"
-        app:layout_constraintBottom_toBottomOf="@+id/editText8"
-        app:layout_constraintStart_toStartOf="@+id/editText8" />
+        app:layout_constraintBottom_toBottomOf="@+id/courseNameUpdateCourses"
+        app:layout_constraintStart_toStartOf="@+id/courseNameUpdateCourses" />
 
     <EditText
-        android:id="@+id/feeUpdateField"
+        android:id="@+id/feeUpdateCourses"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
         android:layout_marginLeft="34dp"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="39dp"
         android:layout_marginEnd="34dp"
         android:layout_marginRight="34dp"
         android:autofillHints=""
@@ -141,7 +142,7 @@
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText9" />
+        app:layout_constraintTop_toBottomOf="@+id/durationUpdateCourses" />
 
     <TextView
         android:id="@+id/textView11"
@@ -152,7 +153,7 @@
         android:layout_marginBottom="44dp"
         android:text="@string/course_id"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="@+id/editText4"
-        app:layout_constraintStart_toStartOf="@+id/editText4" />
+        app:layout_constraintBottom_toBottomOf="@+id/courseIDUpdateCourses"
+        app:layout_constraintStart_toStartOf="@+id/courseIDUpdateCourses" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

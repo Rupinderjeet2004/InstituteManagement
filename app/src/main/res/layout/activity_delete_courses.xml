@@ -8,7 +8,7 @@
     tools:ignore="LabelFor">
 
     <EditText
-        android:id="@+id/editText10"
+        android:id="@+id/courseIDDeleteCourses"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="33dp"
@@ -32,8 +32,8 @@
         android:layout_marginBottom="2dp"
         android:text="@string/course_id"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/editText10"
-        app:layout_constraintStart_toStartOf="@+id/editText10" />
+        app:layout_constraintBottom_toTopOf="@+id/courseIDDeleteCourses"
+        app:layout_constraintStart_toStartOf="@+id/courseIDDeleteCourses" />
 
     <Button
         android:id="@+id/button4"
@@ -44,11 +44,11 @@
         android:layout_marginRight="36dp"
         android:text="@string/all_courses"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button6"
-        app:layout_constraintTop_toBottomOf="@+id/editText10" />
+        app:layout_constraintStart_toEndOf="@+id/saveButtonDeleteCourses"
+        app:layout_constraintTop_toBottomOf="@+id/courseIDDeleteCourses" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/saveButtonDeleteCourses"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="33dp"

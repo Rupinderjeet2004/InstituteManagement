@@ -60,13 +60,13 @@ public class Register extends AppCompatActivity {
                     //Passing user entered values to the registerUser method which is written in Database Helper class.
                     boolean isInserted = helper.registerUser(user, pass);
                     if (isInserted) { // If return value of registerUser method is true then message of Registration SuccessFull is shown.
-                        Toast.makeText(Register.this, "Registration SuccessFull", Toast.LENGTH_LONG).show();
+                        Toast.makeText(Register.this, "Registration SuccessFul", Toast.LENGTH_LONG).show();
                         Intent i = new Intent(Register.this, Login.class);
                         startActivity(i);
                         finish();
                     } else {
                         //This message will be shown to user if some error occurred during data insertion to database.
-                        Toast.makeText(Register.this, "Registration UnSuccessFull", Toast.LENGTH_LONG).show();
+                        Toast.makeText(Register.this, "Registration UnSuccessFul", Toast.LENGTH_LONG).show();
                     }
                 }
             }

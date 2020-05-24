@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -36,7 +37,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
+        onCreate(db);
     }
 
     boolean registerUser(String username, String password) {
@@ -51,6 +52,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     String userLogin(String password) {
+        db.execSQL("CREATE TABLE IF NOT EXISTS " + TBL_LOGIN_CREDENTIALS + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, USERNAME TEXT, PASSWORD TEXT)");
         //Query to select username and password form table TBL_LOGIN_CREDENTIALS.
         String query = "SELECT USERNAME, PASSWORD FROM " + TBL_LOGIN_CREDENTIALS;
         //USing cursor to store values as the data is being searched in database.
@@ -76,11 +78,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     boolean addNewCourses(String Id, String courseName, String duration, String fee) {
-        String COURSEID = "COURSEID";
-        String COURSENAME = "COURSENAME";
-        String DURATION = "DURATION";
-        String FEE = "FEE";
-        db.execSQL("CREATE TABLE IF NOT EXISTS " + TBL_COURSES + " (COURSEID INTEGER PRIMARY KEY, COURSENAME TEXT, DURATION INTEGER, FEE INTEGER)");
+        String COURSEID = "COURSEID", COURSENAME = "COURSENAME", DURATION = "DURATION", FEE = "FEE";
+        db.execSQL("CREATE TABLE IF NOT EXISTS " + TBL_COURSES + " (COURSEID INTEGER PRIMARY KEY NOT NULL, COURSENAME TEXT, DURATION INTEGER, FEE INTEGER)");
         ContentValues values = new ContentValues();
         values.put(COURSEID, Id);
         values.put(COURSENAME, courseName);
@@ -90,8 +89,18 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return result != -1;
     }
 
-    boolean updateCourses() {
+    int updateCourses(String courseID, String courseName, String duration, String fee) {
+        String COURSEID = "COURSEID", COURSENAME = "COURSENAME", DURATION = "DURATION", FEE = "FEE";
+        db.execSQL("CREATE TABLE IF NOT EXISTS " + TBL_COURSES + " (COURSEID INTEGER PRIMARY KEY NOT NULL, COURSENAME TEXT, DURATION INTEGER, FEE INTEGER)");
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(COURSEID, courseID);
+        contentValues.put(COURSENAME, courseName);
+        contentValues.put(DURATION, duration);
+        contentValues.put(FEE, fee);
+        return db.update(TBL_COURSES, contentValues, "COURSEID = ?", new String[]{courseID});
+    }
 
-        return false;
+    int deleteCourses(String id) {
+        return db.delete(TBL_COURSES, "COURSEID = ? ", new String[]{id});
     }
 }
