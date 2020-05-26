@@ -12,14 +12,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/full_name"
-        app:layout_constraintStart_toStartOf="@+id/spinnerTradeUpdateStudents"
+        app:layout_constraintStart_toStartOf="@+id/fullNameUpdateStudents"
         app:layout_constraintTop_toBottomOf="@+id/spinnerTradeUpdateStudents" />
 
     <TextView
         android:id="@+id/textView50"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="2dp"
         android:text="@string/full_address"
         app:layout_constraintStart_toStartOf="@+id/fullAddressUpdateStudents"
         app:layout_constraintTop_toBottomOf="@+id/fatherNameUpdateStudents" />
@@ -55,6 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
         android:layout_marginLeft="34dp"
+        android:layout_marginTop="1dp"
         android:layout_marginEnd="34dp"
         android:layout_marginRight="34dp"
         android:autofillHints=""
@@ -83,7 +84,7 @@
         android:id="@+id/textView51"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="3dp"
         android:text="@string/contact_number"
         app:layout_constraintStart_toStartOf="@+id/contactNoUpdateStudents"
         app:layout_constraintTop_toBottomOf="@+id/fullAddressUpdateStudents" />
@@ -119,7 +120,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
         android:layout_marginLeft="34dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="2dp"
         android:layout_marginEnd="34dp"
         android:layout_marginRight="34dp"
         android:autofillHints=""
@@ -179,38 +180,40 @@
         android:id="@+id/textView52"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
         android:text="@string/trade_stream"
         app:layout_constraintStart_toStartOf="@+id/rollNoUpdateStudents"
-        app:layout_constraintTop_toBottomOf="@+id/rollNoUpdateStudents" />
+        app:layout_constraintTop_toTopOf="@+id/rollNoUpdateStudents" />
 
     <TextView
         android:id="@+id/textView36"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginBottom="1dp"
         android:text="@string/semester"
-        app:layout_constraintStart_toEndOf="@+id/spinnerTradeUpdateStudents"
-        app:layout_constraintTop_toBottomOf="@+id/rollNoUpdateStudents" />
+        app:layout_constraintBottom_toTopOf="@+id/spinnerSemesterUpdateStudents"
+        app:layout_constraintEnd_toEndOf="@+id/rollNoUpdateStudents" />
 
     <Spinner
         android:id="@+id/spinnerSemesterUpdateStudents"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
         app:layout_constraintEnd_toEndOf="@+id/rollNoUpdateStudents"
         app:layout_constraintStart_toStartOf="@+id/textView36"
-        app:layout_constraintTop_toBottomOf="@+id/textView36" />
+        app:layout_constraintTop_toBottomOf="@+id/rollNoUpdateStudents" />
 
     <Spinner
         android:id="@+id/spinnerTradeUpdateStudents"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
-        android:layout_marginLeft="34dp"
-        android:layout_marginEnd="34dp"
-        android:layout_marginRight="34dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
         app:layout_constraintEnd_toStartOf="@+id/resetButtonUpdateStudents"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView48"
         app:layout_constraintTop_toBottomOf="@+id/textView52" />
 
     <Button

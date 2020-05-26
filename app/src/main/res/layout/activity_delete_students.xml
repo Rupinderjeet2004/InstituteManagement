@@ -11,33 +11,33 @@
         android:id="@+id/textView34"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
-        android:layout_marginLeft="19dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
         android:layout_marginBottom="1dp"
         android:text="@string/semester"
         app:layout_constraintBottom_toTopOf="@+id/spinnerSemesterDeleteStudents"
-        app:layout_constraintStart_toEndOf="@+id/spinnerTradeDeleteStudents" />
+        app:layout_constraintEnd_toEndOf="@+id/studentIdDeleteStudents" />
 
     <TextView
         android:id="@+id/textView33"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="27dp"
         android:text="@string/trade_stream"
-        app:layout_constraintStart_toStartOf="@+id/spinnerTradeDeleteStudents"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/studentIdDeleteStudents" />
 
     <Spinner
         android:id="@+id/spinnerTradeDeleteStudents"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
-        android:layout_marginLeft="34dp"
         android:layout_marginTop="1dp"
-        android:layout_marginEnd="34dp"
-        android:layout_marginRight="34dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
         app:layout_constraintEnd_toStartOf="@+id/button22"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView33"
         app:layout_constraintTop_toBottomOf="@+id/textView33" />
 
     <EditText
@@ -58,15 +58,12 @@
 
     <Button
         android:id="@+id/saveButtonDeleteStudents"
-        android:layout_width="0dp"
+        android:layout_width="134dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
         android:layout_marginLeft="34dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginRight="36dp"
         android:text="@string/save"
         app:layout_constraintBaseline_toBaselineOf="@+id/button22"
-        app:layout_constraintEnd_toStartOf="@+id/textView34"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -93,8 +90,6 @@
         android:id="@+id/spinnerSemesterDeleteStudents"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
         app:layout_constraintEnd_toEndOf="@+id/studentIdDeleteStudents"
         app:layout_constraintStart_toStartOf="@+id/textView34"
         app:layout_constraintTop_toTopOf="@+id/spinnerTradeDeleteStudents" />
