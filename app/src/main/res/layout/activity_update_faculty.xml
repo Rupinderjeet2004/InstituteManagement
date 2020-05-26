@@ -7,27 +7,32 @@
     tools:context=".UpdateFaculty"
     tools:ignore="LabelFor">
 
-    <EditText
-        android:id="@+id/editText11"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+        android:layout_marginTop="30dp"
+        android:text="@string/faculty_id"
+        app:layout_constraintStart_toStartOf="@+id/facultyIdUpdateFaculty"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:text="@string/qualification"
+        app:layout_constraintStart_toStartOf="@+id/fullAddressUpdateFaculty"
+        app:layout_constraintTop_toBottomOf="@+id/fullAddressUpdateFaculty" />
 
     <EditText
-        android:id="@+id/editText14"
+        android:id="@+id/qualificationUpdateFaculty"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
+        android:layout_marginTop="1dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:autofillHints=""
@@ -38,61 +43,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
     <TextView
-        android:id="@+id/textView24"
+        android:id="@+id/textView27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="11dp"
-        android:text="@string/faculty_id"
-        app:layout_constraintStart_toStartOf="@+id/editText11"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editText12"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView30" />
-
-    <TextView
-        android:id="@+id/textView30"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/full_name"
-        app:layout_constraintStart_toStartOf="@+id/editText11"
-        app:layout_constraintTop_toBottomOf="@+id/editText11" />
-
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
-        android:text="@string/qualification"
-        app:layout_constraintStart_toStartOf="@+id/editText13"
-        app:layout_constraintTop_toBottomOf="@+id/editText13" />
-
-    <EditText
-        android:id="@+id/editText13"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+        android:text="@string/experience_years"
+        app:layout_constraintStart_toStartOf="@+id/qualificationUpdateFaculty"
+        app:layout_constraintTop_toBottomOf="@+id/qualificationUpdateFaculty" />
 
     <TextView
         android:id="@+id/textView29"
@@ -101,35 +57,29 @@
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:text="@string/full_address"
-        app:layout_constraintStart_toStartOf="@+id/editText12"
-        app:layout_constraintTop_toBottomOf="@+id/editText12" />
+        app:layout_constraintStart_toStartOf="@+id/fullNameUpdateFaculty"
+        app:layout_constraintTop_toBottomOf="@+id/fullNameUpdateFaculty" />
 
     <TextView
-        android:id="@+id/textView27"
+        android:id="@+id/textView26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/experience_years"
-        app:layout_constraintStart_toStartOf="@+id/editText14"
-        app:layout_constraintTop_toBottomOf="@+id/editText14" />
+        android:layout_marginTop="3dp"
+        android:text="@string/salary"
+        app:layout_constraintStart_toStartOf="@+id/experienceUpdateFaculty"
+        app:layout_constraintTop_toBottomOf="@+id/experienceUpdateFaculty" />
 
-    <EditText
-        android:id="@+id/editText16"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
         android:layout_marginTop="1dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+        android:text="@string/full_name"
+        app:layout_constraintStart_toStartOf="@+id/facultyIdUpdateFaculty"
+        app:layout_constraintTop_toBottomOf="@+id/facultyIdUpdateFaculty" />
 
     <EditText
-        android:id="@+id/editText17"
+        android:id="@+id/designationUpdateFaculty"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -145,7 +95,72 @@
         app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
     <EditText
-        android:id="@+id/editText15"
+        android:id="@+id/fullAddressUpdateFaculty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/list_of_faculty"
+        app:layout_constraintEnd_toEndOf="@+id/resetButtonUpdateFaculty"
+        app:layout_constraintStart_toStartOf="@+id/saveButtonUpdateFaculty"
+        app:layout_constraintTop_toBottomOf="@+id/saveButtonUpdateFaculty" />
+
+    <EditText
+        android:id="@+id/facultyIdUpdateFaculty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView24" />
+
+    <EditText
+        android:id="@+id/salaryUpdateFaculty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/designation"
+        app:layout_constraintStart_toStartOf="@+id/salaryUpdateFaculty"
+        app:layout_constraintTop_toBottomOf="@+id/salaryUpdateFaculty" />
+
+    <EditText
+        android:id="@+id/experienceUpdateFaculty"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -160,49 +175,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/designation"
-        app:layout_constraintStart_toStartOf="@+id/editText16"
-        app:layout_constraintTop_toBottomOf="@+id/editText16" />
-
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:text="@string/salary"
-        app:layout_constraintStart_toStartOf="@+id/editText16"
-        app:layout_constraintTop_toBottomOf="@+id/editText15" />
-
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/saveButtonUpdateFaculty"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="19dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
         android:text="@string/save"
-        app:layout_constraintEnd_toStartOf="@+id/button9"
+        app:layout_constraintEnd_toStartOf="@+id/resetButtonUpdateFaculty"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText17" />
+        app:layout_constraintTop_toBottomOf="@+id/designationUpdateFaculty" />
 
-    <Button
-        android:id="@+id/button14"
+    <EditText
+        android:id="@+id/fullNameUpdateFaculty"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="@string/list_of_faculty"
-        app:layout_constraintEnd_toEndOf="@+id/button9"
-        app:layout_constraintStart_toStartOf="@+id/button8"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/resetButtonUpdateFaculty"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="37dp"
@@ -211,7 +215,7 @@
         android:text="@string/reset"
         app:layout_constraintBottom_toTopOf="@+id/button14"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button8" />
+        app:layout_constraintStart_toEndOf="@+id/saveButtonUpdateFaculty" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier"

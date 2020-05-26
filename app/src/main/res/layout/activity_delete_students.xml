@@ -7,13 +7,46 @@
     tools:context=".DeleteStudents"
     tools:ignore="LabelFor">
 
-    <EditText
-        android:id="@+id/editText26"
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/semester"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerSemesterDeleteStudents"
+        app:layout_constraintStart_toEndOf="@+id/spinnerTradeDeleteStudents" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="@string/trade_stream"
+        app:layout_constraintStart_toStartOf="@+id/spinnerTradeDeleteStudents"
+        app:layout_constraintTop_toBottomOf="@+id/studentIdDeleteStudents" />
+
+    <Spinner
+        android:id="@+id/spinnerTradeDeleteStudents"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
         android:layout_marginLeft="34dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        app:layout_constraintEnd_toStartOf="@+id/button22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+    <EditText
+        android:id="@+id/studentIdDeleteStudents"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="1dp"
         android:layout_marginEnd="34dp"
         android:layout_marginRight="34dp"
         android:autofillHints=""
@@ -21,41 +54,48 @@
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
     <Button
-        android:id="@+id/button21"
+        android:id="@+id/saveButtonDeleteStudents"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
         android:layout_marginLeft="34dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
         android:text="@string/save"
         app:layout_constraintBaseline_toBaselineOf="@+id/button22"
-        app:layout_constraintEnd_toStartOf="@+id/button22"
+        app:layout_constraintEnd_toStartOf="@+id/textView34"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button22"
-        android:layout_width="0dp"
+        android:layout_width="136dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="47dp"
         android:layout_marginEnd="37dp"
         android:layout_marginRight="37dp"
         android:text="@string/all_studentss"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button21"
-        app:layout_constraintTop_toBottomOf="@+id/editText26" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSemesterDeleteStudents" />
 
     <TextView
         android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="9dp"
-        android:layout_marginLeft="9dp"
-        android:layout_marginBottom="1dp"
+        android:layout_marginTop="104dp"
         android:text="@string/student_id"
-        app:layout_constraintBottom_toTopOf="@+id/editText26"
-        app:layout_constraintStart_toStartOf="@+id/editText26" />
+        app:layout_constraintStart_toStartOf="@+id/studentIdDeleteStudents"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerSemesterDeleteStudents"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/studentIdDeleteStudents"
+        app:layout_constraintStart_toStartOf="@+id/textView34"
+        app:layout_constraintTop_toTopOf="@+id/spinnerTradeDeleteStudents" />
 </androidx.constraintlayout.widget.ConstraintLayout>

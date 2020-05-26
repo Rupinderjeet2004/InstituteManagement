@@ -24,7 +24,7 @@
     <string name="fee">Fee</string>
     <string name="save">Save</string>
     <string name="add_new_courses">Add New Courses</string>
-    <string name="duration">Duration</string>
+    <string name="duration">Duration(Years)</string>
     <string name="course_id">Course ID</string>
     <string name="view_all_courses">View All Courses</string>
     <string name="reset">Reset</string>
@@ -50,4 +50,6 @@
     <string name="all_studentss">All Students</string>
     <string name="register">Register</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="semester">Semester</string>
+
 </resources>

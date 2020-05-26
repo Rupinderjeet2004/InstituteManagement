@@ -10,7 +10,7 @@
     tools:layout_editor_absoluteY="-3dp">
 
     <EditText
-        android:id="@+id/editText11"
+        android:id="@+id/facultyIdAddFaculty"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
@@ -26,7 +26,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/resetButtonAddFaculty"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="7dp"
@@ -34,11 +34,11 @@
         android:layout_marginRight="35dp"
         android:text="@string/reset"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button8"
-        app:layout_constraintTop_toBottomOf="@+id/editText17" />
+        app:layout_constraintStart_toEndOf="@+id/saveButtonAddFaculty"
+        app:layout_constraintTop_toBottomOf="@+id/designationAddFaculty" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/saveButtonAddFaculty"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
@@ -47,12 +47,12 @@
         android:layout_marginEnd="48dp"
         android:layout_marginRight="48dp"
         android:text="@string/save"
-        app:layout_constraintEnd_toStartOf="@+id/button9"
+        app:layout_constraintEnd_toStartOf="@+id/resetButtonAddFaculty"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText17" />
+        app:layout_constraintTop_toBottomOf="@+id/designationAddFaculty" />
 
     <EditText
-        android:id="@+id/editText15"
+        android:id="@+id/experienceAddFaculty"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
@@ -71,10 +71,10 @@
         android:id="@+id/textView30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="2dp"
         android:text="@string/full_name"
-        app:layout_constraintStart_toStartOf="@+id/editText11"
-        app:layout_constraintTop_toBottomOf="@+id/editText11" />
+        app:layout_constraintStart_toStartOf="@+id/fullNameAddFaculty"
+        app:layout_constraintTop_toBottomOf="@+id/facultyIdAddFaculty" />
 
     <TextView
         android:id="@+id/textView24"
@@ -82,16 +82,16 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/faculty_id"
-        app:layout_constraintStart_toStartOf="@+id/editText11"
+        app:layout_constraintStart_toStartOf="@+id/facultyIdAddFaculty"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText16"
+        android:id="@+id/salaryAddFaculty"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
         android:layout_marginLeft="34dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="2dp"
         android:layout_marginEnd="34dp"
         android:layout_marginRight="34dp"
         android:autofillHints=""
@@ -107,8 +107,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
         android:text="@string/experience_years"
-        app:layout_constraintStart_toStartOf="@+id/editText14"
-        app:layout_constraintTop_toBottomOf="@+id/editText14" />
+        app:layout_constraintStart_toStartOf="@+id/qualificationAddFaculty"
+        app:layout_constraintTop_toBottomOf="@+id/qualificationAddFaculty" />
 
     <Button
         android:id="@+id/button14"
@@ -122,15 +122,15 @@
         android:text="@string/list_of_faculty"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
+        app:layout_constraintTop_toBottomOf="@+id/saveButtonAddFaculty" />
 
     <EditText
-        android:id="@+id/editText13"
+        android:id="@+id/fullAddressAddFaculty"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
         android:layout_marginLeft="34dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="2dp"
         android:layout_marginEnd="34dp"
         android:layout_marginRight="34dp"
         android:autofillHints=""
@@ -138,10 +138,10 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
 
     <EditText
-        android:id="@+id/editText17"
+        android:id="@+id/designationAddFaculty"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
@@ -157,16 +157,16 @@
         app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
     <TextView
-        android:id="@+id/textView29"
+        android:id="@+id/textView31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:text="@string/full_address"
-        app:layout_constraintStart_toStartOf="@+id/editText12"
-        app:layout_constraintTop_toTopOf="@+id/editText12" />
+        app:layout_constraintStart_toStartOf="@+id/fullNameAddFaculty"
+        app:layout_constraintTop_toTopOf="@+id/fullNameAddFaculty" />
 
     <EditText
-        android:id="@+id/editText12"
+        android:id="@+id/fullNameAddFaculty"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
@@ -185,19 +185,19 @@
         android:id="@+id/textView28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="3dp"
         android:text="@string/qualification"
-        app:layout_constraintStart_toStartOf="@+id/editText14"
-        app:layout_constraintTop_toBottomOf="@+id/editText13" />
+        app:layout_constraintStart_toStartOf="@+id/qualificationAddFaculty"
+        app:layout_constraintTop_toBottomOf="@+id/fullAddressAddFaculty" />
 
     <TextView
         android:id="@+id/textView26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="2dp"
         android:text="@string/salary"
-        app:layout_constraintStart_toStartOf="@+id/editText15"
-        app:layout_constraintTop_toBottomOf="@+id/editText15" />
+        app:layout_constraintStart_toStartOf="@+id/experienceAddFaculty"
+        app:layout_constraintTop_toBottomOf="@+id/experienceAddFaculty" />
 
     <TextView
         android:id="@+id/textView25"
@@ -205,11 +205,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:text="@string/designation"
-        app:layout_constraintStart_toStartOf="@+id/editText16"
-        app:layout_constraintTop_toTopOf="@+id/editText16" />
+        app:layout_constraintStart_toStartOf="@+id/salaryAddFaculty"
+        app:layout_constraintTop_toTopOf="@+id/salaryAddFaculty" />
 
     <EditText
-        android:id="@+id/editText14"
+        android:id="@+id/qualificationAddFaculty"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"

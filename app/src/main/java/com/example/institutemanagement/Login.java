@@ -58,7 +58,6 @@ public class Login extends AppCompatActivity {
                     if (pass.equals(passwordFromDB)) {
                         Intent intent = new Intent(Login.this, MainMenu.class);
                         startActivity(intent);
-                        finish();
                     } else {
                         //Showing the message if user tries to enter wrong username and password
                         Toast message = Toast.makeText(Login.this, "Username and Password doesn't match or You're not Registered.", Toast.LENGTH_LONG);

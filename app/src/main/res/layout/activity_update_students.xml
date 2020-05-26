@@ -7,13 +7,69 @@
     tools:context=".UpdateStudents"
     tools:ignore="LabelFor">
 
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/full_name"
+        app:layout_constraintStart_toStartOf="@+id/spinnerTradeUpdateStudents"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerTradeUpdateStudents" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="@string/full_address"
+        app:layout_constraintStart_toStartOf="@+id/fullAddressUpdateStudents"
+        app:layout_constraintTop_toBottomOf="@+id/fatherNameUpdateStudents" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="@string/father_name"
+        app:layout_constraintStart_toStartOf="@+id/fatherNameUpdateStudents"
+        app:layout_constraintTop_toBottomOf="@+id/fullNameUpdateStudents" />
+
     <EditText
-        android:id="@+id/editText45"
+        android:id="@+id/fatherNameUpdateStudents"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
         android:layout_marginLeft="34dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView49" />
+
+    <EditText
+        android:id="@+id/fullNameUpdateStudents"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView48" />
+
+    <EditText
+        android:id="@+id/fullAddressUpdateStudents"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
         android:layout_marginEnd="34dp"
         android:layout_marginRight="34dp"
         android:autofillHints=""
@@ -23,8 +79,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView50" />
 
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/contact_number"
+        app:layout_constraintStart_toStartOf="@+id/contactNoUpdateStudents"
+        app:layout_constraintTop_toBottomOf="@+id/fullAddressUpdateStudents" />
+
     <EditText
-        android:id="@+id/editText42"
+        android:id="@+id/contactNoUpdateStudents"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView51" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:text="@string/student_id"
+        app:layout_constraintStart_toStartOf="@+id/studentIdUpdateStudents"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/rollNoUpdateStudents"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
@@ -40,53 +130,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textView47" />
 
     <EditText
-        android:id="@+id/editText44"
+        android:id="@+id/studentIdUpdateStudents"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
         android:layout_marginLeft="34dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="34dp"
-        android:layout_marginRight="34dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView49" />
-
-    <TextView
-        android:id="@+id/textView48"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="@string/full_name"
-        app:layout_constraintStart_toStartOf="@+id/editText42"
-        app:layout_constraintTop_toTopOf="@+id/editText42" />
-
-    <EditText
-        android:id="@+id/editText47"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
-        android:layout_marginLeft="34dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="34dp"
-        android:layout_marginRight="34dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView52" />
-
-    <EditText
-        android:id="@+id/editText41"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
-        android:layout_marginLeft="34dp"
-        android:layout_marginTop="1dp"
         android:layout_marginEnd="34dp"
         android:layout_marginRight="34dp"
         android:autofillHints=""
@@ -97,29 +145,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textView46" />
 
     <TextView
-        android:id="@+id/textView46"
+        android:id="@+id/textView47"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/student_id"
-        app:layout_constraintStart_toStartOf="@+id/editText41"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editText46"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
-        android:layout_marginLeft="34dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="34dp"
-        android:layout_marginRight="34dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="phone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView51" />
+        android:text="@string/roll_no"
+        app:layout_constraintStart_toStartOf="@+id/studentIdUpdateStudents"
+        app:layout_constraintTop_toBottomOf="@+id/studentIdUpdateStudents" />
 
     <Button
         android:id="@+id/button33"
@@ -133,93 +164,64 @@
         android:text="@string/all_students"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button31" />
+        app:layout_constraintTop_toBottomOf="@+id/saveButtonUpdateStudents" />
 
     <Button
-        android:id="@+id/button31"
-        android:layout_width="0dp"
+        android:id="@+id/saveButtonUpdateStudents"
+        android:layout_width="139dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
-        android:layout_marginLeft="34dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="46dp"
-        android:layout_marginRight="46dp"
+        android:layout_marginTop="23dp"
         android:text="@string/save"
-        app:layout_constraintEnd_toStartOf="@+id/button32"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText47" />
-
-    <TextView
-        android:id="@+id/textView49"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="@string/father_name"
-        app:layout_constraintStart_toStartOf="@+id/editText43"
-        app:layout_constraintTop_toTopOf="@+id/editText43" />
+        app:layout_constraintStart_toStartOf="@+id/button33"
+        app:layout_constraintTop_toBottomOf="@+id/contactNoUpdateStudents" />
 
     <TextView
         android:id="@+id/textView52"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
         android:text="@string/trade_stream"
-        app:layout_constraintStart_toStartOf="@+id/editText46"
-        app:layout_constraintTop_toTopOf="@+id/editText46" />
+        app:layout_constraintStart_toStartOf="@+id/rollNoUpdateStudents"
+        app:layout_constraintTop_toBottomOf="@+id/rollNoUpdateStudents" />
 
-    <EditText
-        android:id="@+id/editText43"
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/semester"
+        app:layout_constraintStart_toEndOf="@+id/spinnerTradeUpdateStudents"
+        app:layout_constraintTop_toBottomOf="@+id/rollNoUpdateStudents" />
+
+    <Spinner
+        android:id="@+id/spinnerSemesterUpdateStudents"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/rollNoUpdateStudents"
+        app:layout_constraintStart_toStartOf="@+id/textView36"
+        app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+    <Spinner
+        android:id="@+id/spinnerTradeUpdateStudents"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
         android:layout_marginLeft="34dp"
-        android:layout_marginTop="1dp"
         android:layout_marginEnd="34dp"
         android:layout_marginRight="34dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/resetButtonUpdateStudents"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView48" />
-
-    <TextView
-        android:id="@+id/textView51"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="@string/contact_number"
-        app:layout_constraintStart_toStartOf="@+id/editText45"
-        app:layout_constraintTop_toTopOf="@+id/editText45" />
+        app:layout_constraintTop_toBottomOf="@+id/textView52" />
 
     <Button
-        android:id="@+id/button32"
-        android:layout_width="0dp"
+        android:id="@+id/resetButtonUpdateStudents"
+        android:layout_width="139dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginRight="35dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/reset"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button31"
-        app:layout_constraintTop_toBottomOf="@+id/editText47" />
-
-    <TextView
-        android:id="@+id/textView47"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="@string/roll_no"
-        app:layout_constraintStart_toStartOf="@+id/editText41"
-        app:layout_constraintTop_toTopOf="@+id/editText41" />
-
-    <TextView
-        android:id="@+id/textView50"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="@string/full_address"
-        app:layout_constraintStart_toStartOf="@+id/editText44"
-        app:layout_constraintTop_toTopOf="@+id/editText44" />
+        app:layout_constraintBottom_toTopOf="@+id/button33"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
